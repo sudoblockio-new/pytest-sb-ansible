@@ -1,0 +1,5 @@
+name: pytest-sb-ansible
+description: pytest plugin for testing sudoblock ansible roles against VMs with vagrant and k8s with kind
+
+github:
+  visibility: public

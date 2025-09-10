@@ -1,0 +1,24 @@
+[project]
+name = "pytest-sb-ansible"
+version = "0.1.0"
+description = "pytest plugin for testing sudoblock VMs"
+
+readme = "README.md"
+license = { text = "Closed Source / Do not distribute." }
+
+dependencies = [
+    "pytest",
+    "ansible-runner",
+    "testinfra",
+]
+
+[project.entry-points.pytest11]
+sb-ansible-kind = "pytest_sb_ansible.kind"
+sb-ansible-vagrant = "pytest_sb_ansible.vagrant"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pytest_sb_ansible"]
